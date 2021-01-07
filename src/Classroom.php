@@ -6,14 +6,21 @@ namespace php_tests;
 
 class Classroom
 {
-	private $people;
+	private $person;
 
-	public function __construct(...$people)
+	public function __construct(People...$person)
 	{
-		$this->people = $people;
-		foreach ($people as $person)
+		$this->person = $person;
+		foreach ($person as $people)
 		{
 			echo nl2br("As entered the classroom \n")
 		}
 	}
+
+	public function ranking()
+    {
+        foreach($this->person as $person) {
+
+        }
+    }
 }
