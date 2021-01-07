@@ -1,0 +1,6 @@
+# Brouillon
+- Création d'une classe dans laquelle il y aura un groupe de personne
+- Ces personnes sont des humains
+- Ces humains peuvent être soit un professeur, soit un étudiant
+- Si l'humain est un étudiant, il aura un rang dans la classe
+- Ce rang sera déterminé par son propre score en fonction du score des autres étudiants
