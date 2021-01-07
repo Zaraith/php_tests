@@ -4,27 +4,22 @@ declare(strict_types=1);
 
 namespace php_tests\Character;
 
-abstract class Human
+use php_tests\People;
+
+abstract class Human implements People
 {
 	protected $age;
 	protected $name;
-	protected $surname;
 
-	public function __construct($idname, $idsurname)
+	public function __construct($idname)
 	{
 		$this->age = rand(14, 19);
 		$this->name = $idname;
-		$this->surname = $idsurname;
 	}
 
 	public function getName(): string
 	{
 		return $this->name;
-	}
-
-	public function getSurname(): string
-	{
-		return $this->surname;
 	}
 
 	public function getAge(): int

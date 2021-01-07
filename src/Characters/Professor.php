@@ -6,7 +6,7 @@ namespace php_tests\Character;
 
 class Professor extends Human
 {
-	public function __construct($idname, $idsurname)
+	public function __construct($idname)
 	{
 		parent::__construct($id);
 		$this->age = 45;
@@ -14,6 +14,6 @@ class Professor extends Human
 
 	public function description(): string
     {
-        return "This professor : {$this->name(), surname()}, is the professor of 2021 classroom. He is {$this->age()} years old.";
+        return "This professor : {$this->name()}, is the professor of 2021 classroom. He is {$this->age()} years old.";
     }
 }

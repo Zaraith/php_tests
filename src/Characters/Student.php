@@ -4,11 +4,13 @@ declare(strict_types=1);
 
 namespace php_tests\Character;
 
-class Student extends Human extends Formation
+use php_tests\Ranking;
+
+class Student extends Human implements Ranking
 {
 	protected $score;
 
-	public function __construct($idname, $idsurname)
+	public function __construct($idname)
 	{
 		parent::__construct($id);
 		$this->formation = 'Fighter';
@@ -17,7 +19,7 @@ class Student extends Human extends Formation
 
 	public function description(): string
     {
-        return "This student : {$this->name(), surname()}, is part of 2021's {$this->formation()} Formation. He is {$this->age()} years old. He is got a score of : {$this->score()} in the Fighting classe";
+        return "This student : {$this->name()}, is part of 2021's {$this->formation()} Formation. He is {$this->age()} years old. He is got a score of : {$this->score()} in the Fighting classe";
     }
 
     public function score(): float

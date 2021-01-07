@@ -4,4 +4,7 @@ declare(strict_types=1);
 
 namespace php_tests;
 
-interface Ranking{}
+interface Ranking
+{
+	public function score(): float;
+}

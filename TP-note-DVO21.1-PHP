@@ -1,17 +1,17 @@
 # Créer une application d'école
 - Définir une session de classe --> Ok
 - Remplir avec des élèves et leur information --> Ok 
-- Sortir un classement pour le passage de l'une épreuve
+- Sortir un classement pour le passage d'une épreuve
 - Mettre des notes aléatoires pour un cours pour chaque élève --> Ok
 
 # Règles :
 - Utiliser des namespaces --> Ok
 - Utiliser de l'autoload de composer
 - Utiliser de la programmation orientée objet (donc faire des classes) --> Ok
-- Utiliser des interfaces
+- Utiliser des interfaces --> Ok
 - Bien penser à exécuter phpcs-fixer pour respecter le coding style --> Ok
-- Ne pas utiliser de else
-- Injecter les dépendances
+- Ne pas utiliser de else --> Ok
+- Injecter les dépendances --> Ok
 - Utiliser de l'héritage --> Ok
 - Utiliser le Type hinting et return type (utilisez le declare strict type) --> Ok
 
@@ -21,3 +21,10 @@
 
 # Rendu
 Je regarderai semaine prochaine, donc vous avez jusqu'à dimanche soir 23h59
+
+
+# Brouillon
+- Création d'une classe dans laquelle il y aura un groupe de personne
+- Ces personnes sont des humains
+- Ces humains peuvent être soit un professeur, soit un étudiant
+- Si l'humain est un étudiant, il aura un rank dans la classe

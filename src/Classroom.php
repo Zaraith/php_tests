@@ -6,21 +6,37 @@ namespace php_tests;
 
 class Classroom
 {
-	private $person;
+	private $people = [];
+	private $group_classroom = [];
+	private $rank = 1;
+	private $previous_score = -1;
 
-	public function __construct(People...$person)
+	public function __construct(People ...$person)
 	{
-		$this->person = $person;
-		foreach ($person as $people)
+		$this->people = $people;
+		foreach ($people as $person)
 		{
-			echo nl2br("As entered the classroom \n")
+			if(!isset($this->group_classroom[get_class($person)]))
+        	{
+                $this->group_classroom[get_class($person)] = [];
+            }
+
+            $this->group_classroom[get_class($person)][$person->getName()] = $person;));
 		}
 	}
 
-	public function ranking()
+	public function setRank()
     {
-        foreach($this->person as $person) {
-
+    	$this->$score = score()
+    	foreach ($people as $person => $score)
+    	{
+    		if ($score != $previous_score)
+    		{
+            $previous_score = $score; 
+            $rankings[$name] = array('score' => $score, 'rank' => $rank);
+    		}
         }
+        $rank++;
     }
+    return $rankings;
 }
